@@ -44,7 +44,7 @@ def all_supplies_in_holidays(holiday_hash)
       holi_string = holiday.to_s.capitalize
       puts holi_string
       if holi_string.include?("_")
-        holi_string.split("_")
+        holi_string = holi_string.split("_")
         puts holi_string
         #holi_string = holi_string.capitalize.join(" ")
       end
@@ -58,6 +58,6 @@ end
  #all_supplies_in_holidays(holiday_hash)
  
  x = "mera"
- x.split("r")
+ x = x.split("r")
  puts x
  
