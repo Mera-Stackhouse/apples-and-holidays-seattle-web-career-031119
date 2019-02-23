@@ -57,6 +57,14 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
 
+  holiday_hash.each {|season, holiday|
+    puts "#{season}:"
+    value.each {|holiday, supplies|
+      sting = supplies.join(", ")
+      puts "#{holiday}: #{string}"
+    }
+  }
+
 end
 
 def all_holidays_with_bbq(holiday_hash)
