@@ -47,6 +47,7 @@ def all_supplies_in_holidays(holiday_hash)
         holi_string = holi_string.split("_")
         for i in 0..holi_string.length - 1
           holi_string[i].capitalize
+        end
         holi_string = holi_string.join(" ")
       end
       string = supplies.join(", ")
