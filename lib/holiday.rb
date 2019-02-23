@@ -58,12 +58,18 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
   holiday_hash.each {|season, holiday|
-    puts "#{season.capitalize}:"
+    #puts "#{season.capitalize}:"
     holiday.each {|holiday, supplies|
-      holi_array = holiday.split("_")
-      holi_string = holi_array.capitalize.join(" ")
+      holi_string = holiday.to_s.capitalize
+      if holi_string.include?("_")
+        holi_string = holi_string.split("_")
+        for i in 0..holi_string.length - 1
+          holi_string[i] = holi_string[i].capitalize
+        end
+        holi_string = holi_string.join(" ")
+      end
       string = supplies.join(", ")
-      puts "  #{holiday.capitalize}: #{string}"
+      puts "  #{holi_string}: #{string}"
     }
   }
 
