@@ -57,3 +57,7 @@ end
 
  all_supplies_in_holidays(holiday_hash)
  
+ x = "mera"
+ x.split("r")
+ puts x
+ 
