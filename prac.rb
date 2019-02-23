@@ -45,7 +45,6 @@ def all_supplies_in_holidays(holiday_hash)
       puts holi_string
       if holi_string.include?("_")
         holi_string = holi_string.split("_")
-        puts holi_string
         holi_string = holi_string.capitalize
         holi_string = holi_string.join(" ")
       end
