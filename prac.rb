@@ -8,8 +8,8 @@ def all_holidays_with_bbq(holiday_hash)
         array << key
       end
     }
-  puts array  
   }
+  array
 end
 
 holiday_hash = 
